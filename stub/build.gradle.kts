@@ -22,6 +22,10 @@ android {
         }
     }
 
+    aaptOptions {
+        additionalParameters("--package-id", "0x80")
+    }
+
     dependenciesInfo {
         includeInApk = false
         includeInBundle = false
